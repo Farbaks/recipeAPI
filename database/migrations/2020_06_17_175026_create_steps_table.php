@@ -15,8 +15,8 @@ class CreateStepsTable extends Migration
     {
         Schema::create('steps', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
             $table->integer('number');
+            $table->text('name');
             $table->integer('recipeId')->unsigned();
             $table->timestamps();
 

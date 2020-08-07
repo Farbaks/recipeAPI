@@ -20,6 +20,7 @@ class CreateRecipesTable extends Migration
             $table->text('description');
             $table->string('duration');
             $table->string('difficulty');
+            $table->string('pictureUrl')->nullable();
             $table->integer('categoryId')->unsigned();
             $table->integer('userId')->unsigned();
             $table->timestamps();
